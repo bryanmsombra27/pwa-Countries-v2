@@ -12,6 +12,10 @@ let actualPage = 1;
 
 const url = "https://restcountries.com/v3.1";
 
+navigator.serviceWorker.register("/sw.js");
+
+
+
 const renderPaises = (paises,page) => {
     paisesContainer.innerHTML = "";
     const pages = paises.length / 10;
